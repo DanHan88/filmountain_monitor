@@ -32,6 +32,15 @@ public class NanoDCController {
         mav.setViewName("views/nodeInfo");
         return mav;
     }
+	@GetMapping(value={"/nanoDc_nodeInfo"})
+    public ModelAndView nanoDc_nodeInfo(HttpServletRequest request,@RequestParam(value="minerId", required = false) String minerId) throws IOException {
+    	//f01227505 //f01695888
+        ModelAndView mav = new ModelAndView();
+        NodeInfoVO nodeInfoVO = nanoDCService.initNodeInfo("f01695888");
+        mav.addObject("nodeInfoVO", nodeInfoVO);
+        mav.setViewName("views/nanoDc_nodeInfo");
+        return mav;
+    }
 	//**>>>          하드웨어 정보           <<<**//
 	@GetMapping(value={"/monitor_hardwareInfo"})
     public ModelAndView hardwareInfo(HttpServletRequest request,@RequestParam(value="minerId",required= false) String minerId, @RequestParam(value="source_link",required=false) String source_link) throws IOException {

@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.15</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
-	<groupId>com.ipfs</groupId>
-	<artifactId>ipfskdc</artifactId>
+	<groupId>com.filmountain</groupId>
+	<artifactId>filmountain</artifactId>
 	<version>1.0.0</version>
-	<name>ipfskdc</name>
-	<description>ipfskdc</description>
+	<name>filmountain_monitor</name>
+	<description>filmounttain_monitor</description>
 	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
@@ -39,7 +39,6 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.3.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -102,7 +101,6 @@
             <version>1.1.1</version>
         </dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -111,5 +109,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
